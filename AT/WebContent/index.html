@@ -1,0 +1,61 @@
+<html>
+<head>
+
+<meta charset="utf-8"/>
+<title>Live migration</title>
+<link href="css/smoothness/jquery-ui-1.10.1.custom.css" rel="stylesheet">
+<script src="js/jquery-1.9.1.js"></script>
+<script src="js/jquery-ui-1.10.1.custom.js"></script>
+
+<script>
+	$(function() {
+		$("#tabs").tabs();
+		$.ajaxSetup ({
+		    // Disable caching of AJAX responses
+		    cache: false
+		});
+	});
+</script>
+
+<style>
+	.centered .ui-tabs-nav {
+	    height: 2.35em;
+	    text-align: center;
+	}
+	.centered .ui-tabs-nav li {
+	    display: inline-block;
+	    float: none;
+	    margin: 0em;
+	}
+
+	#tabs{
+		width:100%; 
+		height:100%
+	};
+	#wrapper {
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: 100%;
+}
+</style>
+	
+</head>
+<body>
+
+<div id="wrapper">
+	<div id="header">
+		<div id="tabs" class="centered">
+			<ul>
+				<li><a href="dashboard.html">Dashboard</a></li>
+				<li><a href="migration.html">Migration</a></li>
+				<li><a href="networking.html">Networking</a></li>
+				<li><a href="settings.html">Settings</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
